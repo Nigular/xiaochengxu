@@ -1,12 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500" loop="loop">    
       <block wx:for="{{movies}}" wx:key="index">    
         <swiper-item>    
@@ -15,12 +8,76 @@
       </block>    
     </swiper>
     <view class='part1'>
-      <view class='title'>
+      <view class='my-title'>
         <text class='xxl'>小程序的机遇</text>
         <text class='s'>Applet opportunities</text>
       </view>
+      <view class='jiyu'>
+        <view class='list'>
+          <view class='li'>
+            <image src='/images/icons/icons_03.png'></image>
+            <text>微信月活跃用户近9亿，微信生态圈是个巨大的供量流量池</text>
+          </view>
+          <view class='li'>
+            <image src='/images/icons/icons_04.png'></image>
+            <text>微信官方统计公众号总数已经超过15000万，公众号几乎都有做微信小程序的需求</text>
+          </view>
+        </view>
+        <view class='list'>
+          <view class='li'>
+            <image src='/images/icons/icons_05.png'></image>
+            <text>小程序主要目标是链接线下的商家，互联网化将从小程序开始，这是一个超过1000亿人民币的市场</text>
+          </view>
+          <view class='li'>
+            <image src='/images/icons/icons_06.png'></image>
+            <text>小程序做为腾讯战略级的产品，且多次在公开场合表达小程序的野心和决心，这将是互联网一下个极其重要的风口</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='part2'>
+      <view class='my-title'>
+        <text class='xxl'>小程序的优势</text>
+        <text class='s'>Applet opportunities</text>
+      </view>
+      <view class='title2'>
+        <image src='/images/icons/icons_07.png'></image>
+        <text class='infont'>02</text>
+        <text>成本低下</text>
+      </view>
+      <view class='text'>传统app开发难度高，开发成本高，小程序开发简单，技术</view> 
+      <view class='text'>门槛低，可以大大节约人力和推广成本</view>
     </view>   
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500" loop="loop">    
+      <block wx:for="{{movies}}" wx:key="index">    
+        <swiper-item>    
+          <image src="/images/temp/lunbo1.png" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>
+
+    <view class='part3'>
+      <image src='/images/temp/tmp_02.jpg' mode='widthFix'></image>
+      <image src='/images/temp/tmp_03.jpg' mode='widthFix'></image>
+      <image src='/images/temp/tmp_04.jpg' mode='widthFix'></image>
+      <image src='/images/temp/tmp_05.jpg' mode='widthFix'></image>
+      <image src='/images/temp/tmp_06.jpg' mode='widthFix'></image>
+    </view>
+
+    <view class='part4'>
+      <view class='my-title'>
+        <text class='xxl'>小程序人气模板</text>
+        <text class='s'>Applet opportunities</text>
+      </view>
+    </view>
+
+    <view class='part5'>
+      <view class='my-title'>
+        <text class='xxl'>行业资讯</text>
+        <text class='s'>Applet opportunities</text>
+      </view>
+    </view>
+  
 </view>

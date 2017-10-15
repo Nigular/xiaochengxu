@@ -30,22 +30,71 @@
 }
 
 .part1{
-  margin-top:-50rpe;
   background: #fff;
-  width: 680rpx;height: 200rpx;
+  width: 680rpx;
   position: relative;top: -178rpx;
+  height: 930rpx;
 }
-.part1 .title{
+.my-title{
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 40rpx;
+  margin-top: 60rpx;
 }
-.part1 .title .xxl{
+.my-title .xxl{
   font-size: 48rpx;
   font-weight: bold;
-  margin-top: 40rpx;
+  
 }
-.part1 .title .s{
+.my-title .s{
   font-size: 21rpx;
   opacity: 0.7;
+  line-height: 40rpx;
+}
+.part1 .jiyu .list{
+  display: flex;
+  justify-content:space-between;
+  margin: 60rpx 0;
+}
+.part1 .jiyu .list .li{
+  width: 270rpx;
+}
+.part1 .jiyu .list .li image{
+  width:80rpx;height: 110rpx;
+  border-bottom: 1px solid #2840bc;
+  display: block;margin: 0 auto;margin-bottom: 25rpx;
+}
+.part1 .jiyu .list .li text{
+  font-size: 25rpx;
+}
+
+.part2{
+  background: #ececec;
+  display: block;
+  width: 100%;text-align: center;
+  padding-bottom: 60rpx;
+  height:400rpx;
+}
+.part2 .title2{
+  font-weight: bold;margin-bottom:40rpx;
+}
+.part2 .title2 .infont{
+  position: relative;
+  margin-left: -40rpx;left:-30rpx;
+  top:-35rpx;font-size:32rpx;
+  color: #fff;
+}
+.part2 .title2 image{
+  width: 62rpx;height: 62rpx;
+  position: relative;
+  top:-15rpx;left:-20rpx;
+}
+.part2 .text{
+  font-size: 24rpx;line-height: 38rpx;
+}
+
+.part3 image{
+  width: 750rpx;display: block;
+  padding: 0;margin: 0;
 }
