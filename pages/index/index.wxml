@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500" loop="loop">    
+      <block wx:for="{{movies}}" wx:key="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+    </swiper>
+    <view class='part1'>
+      <view class='title'>
+        <text class='xxl'>小程序的机遇</text>
+        <text class='s'>Applet opportunities</text>
+      </view>
+    </view>   
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

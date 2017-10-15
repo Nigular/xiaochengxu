@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/case/case",
+    "pages/help/help",
+    "pages/news/news",
+    "pages/templet/templet"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#787878",
+    "selectedColor": "#2840bc",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "text": "小程序模板",
+        "pagePath": "pages/templet/templet",
+        "iconPath": "images/model.png",
+        "selectedIconPath": "images/model1.png"
+      },
+      {
+        "text": "案例",
+        "pagePath": "pages/case/case",
+        "iconPath": "images/case.png",
+        "selectedIconPath": "images/case1.png"
+      },
+      {
+        "text": "资讯",
+        "pagePath": "pages/news/news",
+        "iconPath": "images/news.png",
+        "selectedIconPath": "images/news1.png"
+      },
+      {
+        "text": "帮助",
+        "pagePath": "pages/help/help",
+        "iconPath": "images/help.png",
+        "selectedIconPath": "images/help1.png"
+      }
+    ]
+  }
+}
